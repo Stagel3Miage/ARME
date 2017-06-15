@@ -19,7 +19,7 @@
 			<!-- partenaire -->
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="txthover">
-					<img src="image_association/nosPartenaires/part1.png" alt="part1">
+					<img class="img-responsive" src="image_association/nosPartenaires/part1.png" alt="part1">
 						<div class="txtcontent">
 							<div class="stars">
 								<div class="glyphicon glyphicon-star"></div>
@@ -43,7 +43,7 @@
 			<!-- partenaire -->
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
 				<div class="txthover">
-					<img src="image_association/nosPartenaires/part2.jpg" alt="part2">
+					<img class="img-responsive" src="image_association/nosPartenaires/part2.jpg" alt="part2">
 						<div class="txtcontent">
 							<div class="stars">
 								<div class="glyphicon glyphicon-star"></div>
@@ -67,7 +67,7 @@
 			<!-- partenaire -->
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="txthover">
-					<img src="image_association/nosPartenaires/part3.jpg" alt="part3">
+					<img class="img-responsive" src="image_association/nosPartenaires/part3.jpg" alt="part3">
 						<div class="txtcontent">
 							<div class="stars">
 								<div class="glyphicon glyphicon-star"></div>
@@ -91,7 +91,7 @@
 			<!-- partenaire -->
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="txthover">
-					<img src="image_association/nosPartenaires/part4.png" alt="part4">
+					<img class="img-responsive" src="image_association/nosPartenaires/part4.png" alt="part4">
 						<div class="txtcontent">
 							<div class="stars">
 								<div class="glyphicon glyphicon-star"></div>
@@ -115,7 +115,7 @@
 			<!-- partenaire -->
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="txthover">
-					<img src="image_association/nosPartenaires/part5.jpg" alt="part5">
+					<img class="img-responsive" src="image_association/nosPartenaires/part5.jpg" alt="part5">
 						<div class="txtcontent">
 							<div class="stars">
 								<div class="glyphicon glyphicon-star"></div>
@@ -141,7 +141,7 @@
 			<!-- partenaire 6 -->
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="txthover">
-					<img src="image_association/nosPartenaires/part6.jpeg" alt="part6">
+					<img class="img-responsive" src="image_association/nosPartenaires/part6.jpeg" alt="part6">
 						<div class="txtcontent">
 							<div class="stars">
 								<div class="glyphicon glyphicon-star"></div>
@@ -166,7 +166,7 @@
 			<!-- partenaire 7 -->
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="txthover">
-					<img src="image_association/nosPartenaires/part7.png" alt="part7">
+					<img class="img-responsive" src="image_association/nosPartenaires/part7.png" alt="part7">
 						<div class="txtcontent">
 							<div class="stars">
 								<div class="glyphicon glyphicon-star"></div>
@@ -190,7 +190,7 @@
 			<!-- partenaire -->
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="txthover">
-					<img src="image_association/nosPartenaires/part8.jpeg" alt="part8">
+					<img class="img-responsive" src="image_association/nosPartenaires/part8.jpeg" alt="part8">
 						<div class="txtcontent">
 							<div class="stars">
 								<div class="glyphicon glyphicon-star"></div>

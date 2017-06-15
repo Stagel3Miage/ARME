@@ -25,7 +25,11 @@
 			</div>
 	</div>
 </div>
-
+<? php
+if (isset($connect))
+  mysqli_close($connect);
+?>
+}
 <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.js"></script>
 <script type="text/javascript" src="source/js/isotope.js"></script>
 <script type="text/javascript" src="source/js/myscript.js"></script>

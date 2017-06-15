@@ -20,153 +20,12 @@
 			</ul>
 	</div>
 
-	<!--modal login -->
-	<div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <!--Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">
-									&times;</span></button>
-                    <h4 class="modal-title">Se connecter</h4>
-                </div>
-                <div class="modal-body">
-                    <form class="form-horizontal">
-								<!-- Email -->
-                <div class="form-group">
-									<label for="Email" class="col-sm-2 control-label">Email:</label>
-                    <div class="col-sm-4 col-sm-push-1">
-                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" aria-hidden="true">
-                    </div>
-                </div>
-								<!-- mot de passe -->
-                <div class="form-group">
-									<label for="motdepasse" class="col-sm-2 control-label">Mot de passe:</label>
-                    <div class="col-sm-4 col-sm-push-1">
-                        <input type="text" class="form-control" id="password" name="password" placeholder="Mot de passe">
-                    </div>
-                 </div>
-								 <!--mdp oublié et s'enregistrer -->
-                <div class="form-group">
-                    <div class="col-sm-6 col-sm-push-3">
-                                <a data-toggle="modal" data-target="#mdpoublieModal"> Mot de passe oublié </a>
-                    </div>
-										<div class="col-sm-6 col-sm-push-0">
-																<a data-toggle="modal" data-target="#Registration"> S'enregistrer </a>
-										</div>
-                </div>
-								<!-- boutton connexion et quitter -->
-                <div class="modal-footer">
-                        <div class=" col-sm-1 col-sm-push-2">
-                            <button type="submit" class="btn btn-primary">connexion</button>
-                        </div>
-												<div class=" col-sm-2 col-sm-push-7">
-				                	<button type="button" class="btn btn-default btn--sm" data-dismiss="modal">Quitter</button>
-												</div>
-                </div>
-
-                </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
+		<!--modal login -->
+			<?php include("forms/login.php"); ?>
 		<!-- mdp oublié -->
-		<div id="mdpoublieModal" class="modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal"
-							aria-hidden="true">&times;</button>
-						<h4 class="modal-title">Mot de passe perdu</h4>
-					</div>
-					<div class="modal-body">
-						<p>Veuillez saisir votre adresse email</p>
-						<input type="text" class="form-control" id="nom" email="nom" placeholder="Email" aria-hidden="true">
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-primary">Valider</button>
-						<button type="button" class="btn btn-default" data-dismiss="modal">Quitter</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
+			<?php include("forms/mdp_oublie.php"); ?>
 		<!-- modal register-->
-			<div  id="Registration"  class="modal fade" role="dialog">
-						<div class="modal-dialog">
-								<!--Modal content-->
-								<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">
-										&times;</span></button>
-												<h4 class="modal-title">S'enregistrer</h4>
-										</div>
-										<div class="modal-body">
-										<form method="post" id="insert_form11" class="form-horizontal" >
-															<!-- civilité -->
-																<div class="form-group">
-																	<label for="civilité" class="col-sm-2 control-label">Civilité:</label>
-																	<div class="col-sm-2 col-sm-push-1">
-																			<select class="form-control" >
-																					<option>Mme.</option>
-																					<option>Mlle.</option>
-																					<option>Mr.</option>
-																			</select>
-																	</div>
-															</div>
-															<!--nom -->
-															<div class="form-group">
-																	<label for="nom" class="col-sm-2 control-label">Nom:</label>
-																	<div class="col-sm-6 col-sm-push-1">
-																			<input type="text" class="form-control" id="nom" name="nom" placeholder="Nom" aria-hidden="true">
-																	</div>
-															</div>
-															<!-- prénom -->
-															<div class="form-group">
-																	<label for="prénom" class="col-sm-2 control-label">Prénom:</label>
-																	<div class="col-sm-6 col-sm-push-1">
-																			<input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prénom" aria-hidden="true">
-																	</div>
-															</div>
-															<!-- mail -->
-															<div class="form-group">
-																	<label for="Email" class="col-sm-2 control-label">Email:</label>
-																	<div class="col-sm-6 col-sm-push-1">
-																			<input type="text" class="form-control" id="email" name="email" placeholder="Email" aria-hidden="true">
-																	</div>
-															</div>
-															<!-- mdp -->
-															<div class="form-group">
-																<label for="motdepasse" class="col-sm-2 control-label">Mot de passe:</label>
-																	<div class="col-sm-6 col-sm-push-1">
-																			<input type="text" class="form-control" id="mdp" name="mot de passe" placeholder="Mot de passe">
-																	</div>
-															 </div>
-															 <!-- confirmation mdp -->
-															 <div class="form-group">
-																 <label for="confirmationmotdepasse" class="col-sm-2 control-label">Confirmez:</label>
-																	<div class="col-sm-6 col-sm-push-1">
-																			<input type="text" class="form-control" id="mdp1" name="mot de passe" placeholder="Mot de passe">
-																	</div>
-															 </div>
-															 <!-- s'enregistrer -->
-															<div class="modal-footer">
-																	<!-- Enregistrer -->
-																	<div class=" col-sm-1 col-sm-push-2">
-																			<button type="submit" class="btn btn-primary">S'enregistrer</button>
-																	</div>
-																	<!-- quitter -->
-																	<div class=" col-sm-1 col-sm-push-5">
-																		<button type="button" class="btn btn-default btn--sm" data-dismiss="modal">Quitter</button>
-																	</div>
-															</div>
-										</form>
-									</div>
-								</div>
-						</div>
-				</div>
-
+			<?php include("forms/registration.php"); ?>
 
 	<!-- Navbar Up -->
 	<nav class="topnavbar navbar-default topnav">
@@ -205,17 +64,14 @@
 						</ul>
 				</li>
 				<li>
-
-					<!--menu 3 -->
 					<a href="#">PARTENARIAT</a>
-
 				</li>
 				<li>
-					<a href="gerer_membre_admin.php">MEMBRES</a>
+					<a href="xxxx.php">MEMBRES</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 </div>
-
+<?php include("carousel.php"); ?>
 <!-- fin header -->
