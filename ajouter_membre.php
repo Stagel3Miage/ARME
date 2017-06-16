@@ -12,7 +12,7 @@ if(isset($_POST['submit']))
     $nom = $_POST["nom"];
     $prenom = $_POST["prenom"];
     $email = $_POST["email"];
-    $mdp = $_POST["mdp1"];
+    $mdp = md5($_POST["mdp1"]);
 
     $required_fields = array("sexe","nom","prenom","email","mdp1");
     validate_presences($required_fields);

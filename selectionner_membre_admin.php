@@ -1,11 +1,11 @@
 <?php
-
+ require_once("./db_connection.php");  //$connect = mysqli_connect("localhost", "root", "toor", "testing");
 //selectionner_membre_admin.php
 if(isset($_POST["employee_id"]))
 {
  $output = '';
- require_once("./db_connection.php");  //$connect = mysqli_connect("localhost", "root", "toor", "testing");
- $query = "SELECT * FROM tbl_employee WHERE id = '".$_POST["employee_id"]."'";
+
+ $query = "SELECT * FROM utilisateur WHERE IDU = '".$_POST["employee_id"]."'";
  $result = mysqli_query($connect, $query);
  $output .= '
       <div class="table-responsive">
@@ -15,23 +15,23 @@ if(isset($_POST["employee_id"]))
      $output .= '
      <tr>
             <td width="30%"><label>Nom</label></td>
-            <td width="70%">'.$row["name"].'</td>
+            <td width="70%">'.$row["nom"].'</td>
         </tr>
         <tr>
-            <td width="30%"><label>Adresse</label></td>
-            <td width="70%">'.$row["address"].'</td>
+            <td width="30%"><label>Prenom</label></td>
+            <td width="70%">'.$row["prenom"].'</td>
         </tr>
         <tr>
             <td width="30%"><label>Sexe</label></td>
-            <td width="70%">'.$row["gender"].'</td>
+            <td width="70%">'.$row["sexe"].'</td>
         </tr>
         <tr>
             <td width="30%"><label>Email</label></td>
-            <td width="70%">'.$row["designation"].'</td>
+            <td width="70%">'.$row["email"].'</td>
         </tr>
         <tr>
             <td width="30%"><label>Mot de passe</label></td>
-            <td width="70%">'.$row["age"].'</td>
+            <td width="70%">'.$row["mdp"].'</td>
         </tr>
      ';
     }

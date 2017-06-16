@@ -5,7 +5,7 @@
 require_once("./includes/headers.php");
 require_once("./includes/db_connection.php");
 
-$query = "SELECT * FROM tbl_employee ORDER BY id DESC";
+$query = "SELECT * FROM utilisateur ORDER BY id DESC";
 $result = mysqli_query($connect, $query);
  ?>
 <!DOCTYPE html>
@@ -27,7 +27,7 @@ $result = mysqli_query($connect, $query);
                   </div>
                   <br />
                   <!-- table employees -->
-                  <div id="employee_table">
+                  <div id="utilisateur_table">
                    <table class="table table-bordered">
                      <!-- header du tableau -->
                     <tr>
@@ -40,8 +40,8 @@ $result = mysqli_query($connect, $query);
                     {
                     ?>
                     <tr>
-                     <td><?php echo $row["name"]; ?></td>
-                     <td><input type="button" name="view" value="voir" id="<?php echo $row["id"]; ?>" class="btn btn-info btn-xs view_data" /></td>
+                     <td><?php echo $row["nom"]; ?></td>
+                     <td><input type="button" name="view" value="voir" id="<?php echo $row["IDU"]; ?>" class="btn btn-info btn-xs view_data" /></td>
                     </tr>
                     <?php
                     }

@@ -1,15 +1,17 @@
 <?php
 //includes
-require_once("./db_connection.php");
+require_once("./includes/db_connection.php");
 
 if(!empty($_POST))
 {
  $output = '';
+ /*
     $name = mysqli_real_escape_string($connect, $_POST["name"]);
     $address = mysqli_real_escape_string($connect, $_POST["address"]);
     $gender = mysqli_real_escape_string($connect, $_POST["gender"]);
     $designation = mysqli_real_escape_string($connect, $_POST["designation"]);
     $age = mysqli_real_escape_string($connect, $_POST["age"]);
+  */
 
     $sexe = $_POST["sexe"];
     $nom = $_POST["nom"];
@@ -40,8 +42,8 @@ if(!empty($_POST))
        {
         $output .= '
          <tr>
-                           <td>' . $row["name"] . '</td>
-                           <td><input type="button" name="view" value="view" id="' . $row["id"] . '" class="btn btn-info btn-xs view_data" /></td>
+                           <td>' . $row["nom"] . '</td>
+                           <td><input type="button" name="view" value="view" id="' . $row["IDU"] . '" class="btn btn-info btn-xs view_data" /></td>
                       </tr>
         ';
        }

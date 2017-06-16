@@ -67,7 +67,7 @@
 					<a href="#">PARTENARIAT</a>
 				</li>
 				<li>
-					<a href="xxxx.php">MEMBRES</a>
+					<a href="gerer_membre_admin.php">MEMBRES</a>
 				</li>
 			</ul>
 		</div>
